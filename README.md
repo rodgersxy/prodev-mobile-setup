@@ -27,16 +27,17 @@ Navigate into the project directory:
 
 cd prodev-mobile-app-0x03
 
-Reset the project using:
-
+## Reset the project using:
+```
 npm run reset-project
+```
 
 Download the required assets from here and place them in the assets/images directory inside your project.
 
-Step 2: Implement Styles
+## Step 2: Implement Styles
 
-Create the following file styles/index.tsx under the project root directory. Open styles/index.tsx and define the following styles** (type manually, do not copy-paste)**:
-
+Create the following file styles/index.tsx under the project root directory. Open styles/index.tsx and define the following styles** 
+```
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
@@ -155,10 +156,11 @@ const styles = StyleSheet.create({
 export {
   styles
 }
-Step 3: Modify App Files
+```
+## Step 3: Modify App Files
 
-Modify your app/_layout.tsx file to look like this
-
+Modify your app/_layout.tsx file to look like this   
+```
 import { Stack } from "expo-router";
 
 export default function RootLayout() {
@@ -166,8 +168,9 @@ export default function RootLayout() {
     headerShown: false
   }} />;
 }
-Modify app/index.tsx to structure the login screen:
-
+```
+## Modify app/index.tsx to structure the login screen:
+```
 import { Text, TextInput, View, TouchableOpacity, Image } from "react-native";
 import { styles } from "@/styles";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
@@ -260,12 +263,10 @@ export default function Index() {
     </SafeAreaProvider>
   );
 }
-Final Steps 1. Run the application on Expo Go:
+```
+
+## Final Steps 1. Run the application on Expo Go:
 
 npx expo start
 
 Test the app on a physical device using Expo Go App and confirm all render correctly.
-
-## Reset the Application:
-
-npm run reset-project
